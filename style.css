@@ -213,7 +213,7 @@ button {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: 100dvh;
 }
 
 .card {
@@ -231,8 +231,9 @@ button {
   z-index: 999;
   position: absolute;
   inset-inline: 0;
-  height: 100vh;
+  height: 100dvh;
   color: hsl(var(--text));
+  border-radius: 0;
   background-color: hsl(var(--card));
   transition: opacity 0.3s ease;
   text-align: center;
