@@ -1,0 +1,337 @@
+[
+  {
+    "college": "Open University System (OUS)",
+    "courses": [
+      {
+        "course": "Bachelor of Science in Entrepreneurship (BSENTREP)",
+        "majors": []
+      },
+      {
+        "course": "Bachelor of Arts in Broadcasting (BABR)",
+        "majors": []
+      },
+      {
+        "course": "Bachelor of Science in Business Administration",
+        "majors": ["Human Resource Management (BSBAHRM)", "Marketing Management (BSBAMM)"]
+      },
+      {
+        "course": "Bachelor of Science in Office Administration (BSOA)",
+        "majors": []
+      },
+      {
+        "course": "Bachelor of Science in Tourism Management (BSTM)",
+        "majors": []
+      },
+      {
+        "course": "Bachelor of Public Administration (BPA)",
+        "majors": []
+      }
+    ]
+  },
+  {
+    "college": "College of Accountancy and Finance (CAF)",
+    "courses": [
+      {
+        "course": "Bachelor of Science in Accountancy (BSA)",
+        "majors": []
+      },
+      {
+        "course": "Bachelor of Science in Management Accounting (BSMA)",
+        "majors": []
+      },
+      {
+        "course": "Bachelor of Science in Business Administration",
+        "majors": ["Financial Management (BSBAFM)"]
+      }
+    ]
+  },
+  {
+    "college": "College of Architecture, Design and the Built Environment (CADBE)",
+    "courses": [
+      {
+        "course": "Bachelor of Science in Architecture (BS-ARCH)",
+        "majors": []
+      },
+      {
+        "course": "Bachelor of Science in Interior Design (BSID)",
+        "majors": []
+      },
+      {
+        "course": "Bachelor of Science in Environmental Planning (BSEP)",
+        "majors": []
+      }
+    ]
+  },
+  {
+    "college": "College of Arts and Letters (CAL)",
+    "courses": [
+      {
+        "course": "Bachelor of Arts in English (ABE)",
+        "majors": []
+      },
+      {
+        "course": "Bachelor of Arts in Filipino (ABF)",
+        "majors": []
+      },
+      {
+        "course": "Bachelor of Arts in Philosophy (ABPHILO)",
+        "majors": []
+      },
+      {
+        "course": "Bachelor of Arts in Theater Arts (ABTA)",
+        "majors": []
+      }
+    ]
+  },
+  {
+    "college": "College of Business Administration (CBA)",
+    "courses": [
+      {
+        "course": "Bachelor of Science in Business Administration",
+        "majors": ["Marketing Management (BSBA-MM)"]
+      },
+      {
+        "course": "Bachelor of Science in Business Administration",
+        "majors": ["Human Resource Development Management (BSBA-HRDM)"]
+      },
+      {
+        "course": "Bachelor of Science in Entrepreneurship (BSEntrep)",
+        "majors": []
+      },
+      {
+        "course": "Bachelor of Science in Office Administration (BSOA)",
+        "majors": []
+      }
+    ]
+  },
+  {
+    "college": "College of Communication (COC)",
+    "courses": [
+      {
+        "course": "Bachelor in Advertising and Public Relation (BAPR)",
+        "majors": []
+      },
+      {
+        "course": "Bachelor of Arts in Journalism (ABJ)",
+        "majors": []
+      },
+      {
+        "course": "Bachelor of Arts on Broadcasting (BA Broadcasting)",
+        "majors": []
+      },
+      {
+        "course": "Bachelor of Arts in Communication Research (ABCR)",
+        "majors": []
+      }
+    ]
+  },
+  {
+    "college": "College of Computer and Information Sciences (CCIS)",
+    "courses": [
+      {
+        "course": "Bachelor of Science in Computer Science (BSCS)",
+        "majors": []
+      },
+      {
+        "course": "Bachelor of Science in Information Technology (BSIT)",
+        "majors": []
+      }
+    ]
+  },
+  {
+    "college": "College of Education (COED)",
+    "courses": [
+      {
+        "course": "Bachelor of Technology and Livelihood Education (BTLEd)",
+        "majors": ["Home Economics", "Industrial Arts", "Information and Communication Technology"]
+      },
+      {
+        "course": "Bachelor of Library and Information Science (BLIS)",
+        "majors": []
+      },
+      {
+        "course": "Bachelor of Secondary Education (BSEd)",
+        "majors": ["English", "Mathematics", "Science", "Filipino", "Social Studies"]
+      },
+      {
+        "course": "Bachelor of Elementary Education (BEEd)",
+        "majors": []
+      },
+      {
+        "course": "Bachelor of Early Childhood Education (BECEd)",
+        "majors": []
+      }
+    ]
+  },
+  {
+    "college": "College of Engineering (CE)",
+    "courses": [
+      {
+        "course": "Bachelor of Science in Civil Engineering (BSCE)",
+        "majors": []
+      },
+      {
+        "course": "Bachelor of Science in Computer Engineering (BSCpE)",
+        "majors": []
+      },
+      {
+        "course": "Bachelor of Science in Electrical Engineering (BSEE)",
+        "majors": []
+      },
+      {
+        "course": "Bachelor of Science in Electronics Engineering (BSECE)",
+        "majors": []
+      },
+      {
+        "course": "Bachelor of Science in Industrial Engineering (BSIE)",
+        "majors": []
+      },
+      {
+        "course": "Bachelor of Science in Mechanical Engineering (BSME)",
+        "majors": []
+      },
+      {
+        "course": "Bachelor of Science in Railway Engineering (BSRE)",
+        "majors": []
+      }
+    ]
+  },
+  {
+    "college": "College of Human Kinetics (CHK)",
+    "courses": [
+      {
+        "course": "Bachelor in Physical Education (BPE)",
+        "majors": []
+      }
+    ]
+  },
+  {
+    "college": "College of Political Science and Public Administration (CPSPA)",
+    "courses": [
+      {
+        "course": "Bachelor of Arts in Political Science (BAPS)",
+        "majors": []
+      },
+      {
+        "course": "Bachelor of Arts in Political Economy (BAPE)",
+        "majors": []
+      },
+      {
+        "course": "Bachelor of Arts in International Studies (BAIS)",
+        "majors": []
+      },
+      {
+        "course": "Bachelor of Public Administration (BPA)",
+        "majors": []
+      }
+    ]
+  },
+  {
+    "college": "College of Social Sciences and Development (CSSD)",
+    "courses": [
+      {
+        "course": "Bachelor in Cooperatives (BC)",
+        "majors": []
+      },
+      {
+        "course": "Bachelor of Arts in History (ABH)",
+        "majors": []
+      },
+      {
+        "course": "Bachelor of Science in Economics (BSE)",
+        "majors": []
+      },
+      {
+        "course": "Bachelor of Science in Psychology (BSPSY)",
+        "majors": []
+      },
+      {
+        "course": "Bachelor of Science in Sociology (BSS)",
+        "majors": []
+      }
+    ]
+  },
+  {
+    "college": "College of Science (CS)",
+    "courses": [
+      {
+        "course": "Bachelor in Applied Statistics (BAS)",
+        "majors": []
+      },
+      {
+        "course": "Bachelor of Science in Applied Mathematics (BSAM)",
+        "majors": ["Actuarial Mathematics"]
+      },
+      {
+        "course": "Bachelor of Science in Biology (BSBIO)",
+        "majors": []
+      },
+      {
+        "course": "Bachelor of Science in Chemistry (BSCHEM)",
+        "majors": []
+      },
+      {
+        "course": "Bachelor of Science in Food Technology (BSFT)",
+        "majors": []
+      },
+      {
+        "course": "Bachelor of Science in Mathematics (BSM)",
+        "majors": []
+      },
+      {
+        "course": "Bachelor of Science in Nutrition and Dietetics (BSND)",
+        "majors": []
+      },
+      {
+        "course": "Bachelor of Science in Physics (BSP)",
+        "majors": []
+      }
+    ]
+  },
+  {
+    "college": "College of Tourism, Hospitality and Transportation Management (CTHTM)",
+    "courses": [
+      {
+        "course": "Bachelor of Science in Tourism Management (BSTM)",
+        "majors": []
+      },
+      {
+        "course": "Bachelor in Transportation Management (BTM)",
+        "majors": []
+      },
+      {
+        "course": "Bachelor of Science in Hospitality Management (BSHM)",
+        "majors": []
+      }
+    ]
+  },
+  {
+    "college": "Institute of Technology (ITECH)",
+    "courses": [
+      {
+        "course": "Diploma in Computer Engineering Technology",
+        "majors": []
+      },
+      {
+        "course": "Diploma in Electronics Communications Engineering Technology",
+        "majors": []
+      },
+      {
+        "course": "Diploma in Electrical Engineering Technology",
+        "majors": []
+      },
+      {
+        "course": "Diploma in Information Communication Technology",
+        "majors": []
+      },
+      {
+        "course": "Diploma in Mechanical Engineering Technology",
+        "majors": []
+      },
+      {
+        "course": "Diploma in Office Management Technology",
+        "majors": []
+      }
+    ]
+  }
+]

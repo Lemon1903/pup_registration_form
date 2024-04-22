@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="assets/pup-logo.png" type="image/x-icon" />
+    <!-- Roboto Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>College Registration Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- starting card -->
+      <div class="card card--start">
+        <div class="card__content">
+          <h1 class="card__heading">College Registration Form</h1>
+          <p class="card__description">
+            <span class="card__title"> Welcome to the Gateway of Possibilities!</span><br />
+            Embark on your educational journey with Polytechnic University of the Philippines (PUP). This card-style
+            form will guide you step by step through the registration process. Let’s start building your future
+            together, one field at a time. Are you ready to dive in?
+          </p>
+          <p class="card__questions">30 Questions</p>
+        </div>
+        <button id="start-btn" class="card__btn card__btn--next">
+          NEXT
+          <i class="fa-solid fa-arrow-right-long card__icon"></i>
+        </button>
+      </div>
+      <!-- form carousel mobile -->
+      <form class="carousel" method="post">
+        <div class="carousel__track-container">
+          <ul class="carousel__track">
+            <li class="carousel__empty"></li>
+            <!-- School Information -->
+            <li class="carousel__slide current-slide">
+              <div class="card card--skip">
+                <div class="card__content card__content--center">
+                  <img class="card__image" src="assets/pup-logo.png" alt="pup logo" />
+                  <h1 class="card__heading">Polytechnic University of the Philippines</h1>
+                  <div class="card__info">
+                    <p class="card__address">Anonas Street 1016 628 Sta Mesa Metro Manila</p>
+                    <p class="card__description">inquire@pup.edu.ph</p>
+                    <p class="card__description">(02) 8713 9304</p>
+                  </div>
+                </div>
+                <div class="carousel__nav--desktop">
+                  <button type="button" class="card__btn card__btn--next">
+                    NEXT
+                    <i class="fa-solid fa-arrow-right-long card__icon"></i>
+                  </button>
+                </div>
+              </div>
+            </li>
+            <!-- Document Requirements -->
+            <li class="carousel__slide">
+              <div class="card card--skip">
+                <div class="card__content">
+                  <p class="card__address">
+                    Additional documents for registration<br /><br />
+
+                    Bring this registration form and the following documentation to the school office.<br /><br />
+
+                    • 2 x 2 inch colored photo with name tag<br />
+                    • Grade 11 and 12 Report Card showing complete name, LRN, and GWA for the first and second
+                    semesters<br />
+                    • Original Certified Birth Certificate<br />
+                    • Certificate of Good Moral<br />
+                  </p>
+                </div>
+                <div class="carousel__nav--desktop">
+                  <button type="button" class="card__btn card__btn--prev">
+                    <i class="fa-solid fa-arrow-left-long card__icon"></i>
+                    PREVIOUS
+                  </button>
+                  <button type="button" class="card__btn card__btn--next">
+                    NEXT
+                    <i class="fa-solid fa-arrow-right-long card__icon"></i>
+                  </button>
+                </div>
+              </div>
+            </li>
+            <!-- Full Name -->
+            <li class="carousel__slide">
+              <div class="card">
+                <div class="card__content">
+                  <h2 class="card__title" data-error="This field is required">Full Name</h2>
+                  <input class="card__input" type="text" name="first-name" placeholder="First Name" required />
+                  <input class="card__input" type="text" name="middle-name" placeholder="Middle Name" required />
+                  <input class="card__input" type="text" name="last-name" placeholder="Last Name" required />
+                </div>
+                <div class="carousel__nav--desktop">
+                  <button type="button" class="card__btn card__btn--prev">
+                    <i class="fa-solid fa-arrow-left-long card__icon"></i>
+                    PREVIOUS
+                  </button>
+                  <button type="button" class="card__btn card__btn--next">
+                    NEXT
+                    <i class="fa-solid fa-arrow-right-long card__icon"></i>
+                  </button>
+                  <p class="error error--nav">This field is required</p>
+                </div>
+              </div>
+            </li>
+            <!-- Birth Date -->
+            <li class="carousel__slide">
+              <div class="card">
+                <div class="card__content">
+                  <h2 class="card__title" data-error="This field is required">Birth Date</h2>
+                  <input class="card__input" type="date" name="birth-date" required />
+                </div>
+                <div class="carousel__nav--desktop">
+                  <button type="button" class="card__btn card__btn--prev">
+                    <i class="fa-solid fa-arrow-left-long card__icon"></i>
+                    PREVIOUS
+                  </button>
+                  <button type="button" class="card__btn card__btn--next">
+                    NEXT
+                    <i class="fa-solid fa-arrow-right-long card__icon"></i>
+                  </button>
+                  <p class="error error--nav">This field is required</p>
+                </div>
+              </div>
+            </li>
+            <!-- Gender -->
+            <li class="carousel__slide">
+              <div class="card">
+                <div class="card__content">
+                  <h2 class="card__title">Gender</h2>
+                  <div class="card__input-container">
+                    <div class="card__input card__input--gender">
+                      <input type="radio" id="male" name="gender" value="male" checked />
+                      <label for="male">Male</label>
+                    </div>
+                    <div class="card__input card__input--gender">
+                      <input type="radio" id="female" name="gender" value="female" />
+                      <label for="female">Female</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel__nav--desktop">
+                  <button type="button" class="card__btn card__btn--prev">
+                    <i class="fa-solid fa-arrow-left-long card__icon"></i>
+                    PREVIOUS
+                  </button>
+                  <button type="button" class="card__btn card__btn--next">
+                    NEXT
+                    <i class="fa-solid fa-arrow-right-long card__icon"></i>
+                  </button>
+                </div>
+              </div>
+            </li>
+            <!-- Email -->
+            <li class="carousel__slide">
+              <div class="card">
+                <div class="card__content">
+                  <h2 class="card__title" data-error="Enter a valid e-mail address">Email</h2>
+                  <input class="card__input" type="email" name="email" placeholder="e.g. myname@example.com" required />
+                </div>
+                <div class="carousel__nav--desktop">
+                  <button type="button" class="card__btn card__btn--prev">
+                    <i class="fa-solid fa-arrow-left-long card__icon"></i>
+                    PREVIOUS
+                  </button>
+                  <button type="button" class="card__btn card__btn--next">
+                    NEXT
+                    <i class="fa-solid fa-arrow-right-long card__icon"></i>
+                  </button>
+                  <p class="error error--nav">Enter a valid e-mail address</p>
+                </div>
+              </div>
+            </li>
+            <!-- Phone Number -->
+            <li class="carousel__slide">
+              <div class="card">
+                <div class="card__content">
+                  <h2 class="card__title" data-error="Enter a valid phone number">Phone Number</h2>
+                  <input
+                    class="card__input"
+                    type="text"
+                    name="phone"
+                    placeholder="e.g. 9123456789"
+                    pattern="[0-9]{10}"
+                    required
+                  />
+                </div>
+                <div class="carousel__nav--desktop">
+                  <button type="button" class="card__btn card__btn--prev">
+                    <i class="fa-solid fa-arrow-left-long card__icon"></i>
+                    PREVIOUS
+                  </button>
+                  <button type="button" class="card__btn card__btn--next">
+                    NEXT
+                    <i class="fa-solid fa-arrow-right-long card__icon"></i>
+                  </button>
+                  <p class="error error--nav">Enter a valid phone number</p>
+                </div>
+              </div>
+            </li>
+            <!-- Present Address -->
+            <li class="carousel__slide">
+              <div class="card">
+                <div class="card__content">
+                  <h2 class="card__title" data-error="This field is required">Address</h2>
+                  <input class="card__input" type="text" name="street" placeholder="Street Address" required />
+                  <div class="card__input-container">
+                    <div id="barangay" class="card__dropdown">
+                      <div class="card__input-wrapper">
+                        <input type="hidden" name="barangay" />
+                        <input
+                          class="card__input card__input--dropdown"
+                          type="button"
+                          value="Barangay"
+                          data-default="Barangay"
+                        />
+                        <i class="fa-solid fa-chevron-down"></i>
+                        <div class="card__dropdown-content">
+                          <ul class="card__dropdown-items"></ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="city" class="card__dropdown">
+                      <div class="card__input-wrapper">
+                        <input type="hidden" name="city" />
+                        <input
+                          class="card__input card__input--dropdown"
+                          type="button"
+                          value="City / Municipality"
+                          data-default="City / Municipality"
+                        />
+                        <i class="fa-solid fa-chevron-down"></i>
+                        <div class="card__dropdown-content">
+                          <ul class="card__dropdown-items"></ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card__input-container">
+                    <div id="province" class="card__dropdown">
+                      <div class="card__input-wrapper">
+                        <input type="hidden" name="province" />
+                        <input
+                          class="card__input card__input--dropdown"
+                          type="button"
+                          value="State / Province"
+                          data-default="State / Province"
+                        />
+                        <i class="fa-solid fa-chevron-down"></i>
+                        <div class="card__dropdown-content">
+                          <ul class="card__dropdown-items"></ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="region" class="card__dropdown">
+                      <div class="card__input-wrapper">
+                        <input type="hidden" name="region" />
+                        <input
+                          class="card__input card__input--dropdown"
+                          type="button"
+                          value="Region"
+                          data-default="Region"
+                        />
+                        <i class="fa-solid fa-chevron-down"></i>
+                        <div class="card__dropdown-content card__dropdown-content--up">
+                          <ul class="card__dropdown-items"></ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel__nav--desktop">
+                  <button type="button" class="card__btn card__btn--prev">
+                    <i class="fa-solid fa-arrow-left-long card__icon"></i>
+                    PREVIOUS
+                  </button>
+                  <button type="button" class="card__btn card__btn--next">
+                    NEXT
+                    <i class="fa-solid fa-arrow-right-long card__icon"></i>
+                  </button>
+                  <p class="error error--nav">This field is required</p>
+                </div>
+              </div>
+            </li>
+            <!-- Senior High School Name -->
+            <li class="carousel__slide">
+              <div class="card">
+                <div class="card__content">
+                  <h2 class="card__title" data-error="This field is required">Senior High School Name</h2>
+                  <input
+                    class="card__input"
+                    type="text"
+                    name="shs-name"
+                    placeholder="e.g. Polytechnic University of the Philippines"
+                    required
+                  />
+                </div>
+                <div class="carousel__nav--desktop">
+                  <button type="button" class="card__btn card__btn--prev">
+                    <i class="fa-solid fa-arrow-left-long card__icon"></i>
+                    PREVIOUS
+                  </button>
+                  <button type="button" class="card__btn card__btn--next">
+                    NEXT
+                    <i class="fa-solid fa-arrow-right-long card__icon"></i>
+                  </button>
+                  <p class="error error--nav">This field is required</p>
+                </div>
+              </div>
+            </li>
+            <!-- Degree Program -->
+            <li class="carousel__slide">
+              <div class="card">
+                <div class="card__content">
+                  <h2 class="card__title" data-error="This field is required">Course Program</h2>
+                  <div id="college" class="card__dropdown">
+                    <div class="card__input-wrapper">
+                      <input type="hidden" name="college" />
+                      <input
+                        class="card__input card__input--dropdown"
+                        type="button"
+                        value="Please Select College"
+                        data-default="Please Select College"
+                        required
+                      />
+                      <i class="fa-solid fa-chevron-down"></i>
+                      <div class="card__dropdown-content">
+                        <ul class="card__dropdown-items"></ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="course" class="card__dropdown">
+                    <div class="card__input-wrapper">
+                      <input type="hidden" name="course" />
+                      <input
+                        class="card__input card__input--dropdown"
+                        type="button"
+                        value="Please Select Course"
+                        data-default="Please Select Course"
+                        required
+                      />
+                      <i class="fa-solid fa-chevron-down"></i>
+                      <div class="card__dropdown-content">
+                        <ul class="card__dropdown-items"></ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="major" class="card__dropdown">
+                    <div class="card__input-wrapper">
+                      <input type="hidden" name="major" />
+                      <input
+                        class="card__input card__input--dropdown"
+                        type="button"
+                        value="Please Select Major"
+                        data-default="Please Select Major"
+                        required
+                      />
+                      <i class="fa-solid fa-chevron-down"></i>
+                      <div class="card__dropdown-content">
+                        <ul class="card__dropdown-items"></ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel__nav--desktop">
+                  <button type="button" class="card__btn card__btn--prev">
+                    <i class="fa-solid fa-arrow-left-long card__icon"></i>
+                    PREVIOUS
+                  </button>
+                  <button type="submit" class="card__btn card__btn--next">SUBMIT</button>
+                  <p class="error error--nav">This field is required</p>
+                </div>
+              </div>
+            </li>
+            <li class="carousel__empty"></li>
+          </ul>
+        </div>
+        <div class="carousel__nav--mobile">
+          <button type="button" class="carousel__btn carousel__btn--prev hide">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+          <button type="button" class="carousel__btn carousel__btn--center"></button>
+          <button type="button" class="carousel__btn carousel__btn--next">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+        </div>
+      </form>
+      <!-- navigation pane -->
+      <div class="navigation-pane">
+        <div class="navigation-pane__header">
+          <button class="navigation-pane__back">
+            <i class="fa-solid fa-chevron-left"></i>
+            Go Back
+          </button>
+          <p class="navigation-pane__incomplete">3 Incomplete Fields</p>
+        </div>
+        <ul class="navigation-pane__item-container">
+          <li class="navigation-pane__item" data-tooltip="School Information">
+            <button class="navigation-pane__btn navigation-pane__btn--active navigation-pane__btn--done">
+              <span class="navigation-pane__label">School Information</span>
+            </button>
+          </li>
+          <li class="navigation-pane__item" data-tooltip="Document Requirements">
+            <button class="navigation-pane__btn navigation-pane__btn--done">
+              <span class="navigation-pane__label">Document Requirements</span>
+            </button>
+          </li>
+          <li class="navigation-pane__item" data-tooltip="Full Name">
+            <button class="navigation-pane__btn">
+              <span class="navigation-pane__label">Full Name</span>
+            </button>
+          </li>
+          <li class="navigation-pane__item" data-tooltip="Birth Date">
+            <button class="navigation-pane__btn">
+              <span class="navigation-pane__label">Birth Date</span>
+            </button>
+          </li>
+          <li class="navigation-pane__item" data-tooltip="Gender">
+            <button class="navigation-pane__btn navigation-pane__btn--done">
+              <span class="navigation-pane__label">Gender</span>
+            </button>
+          </li>
+          <li class="navigation-pane__item" data-tooltip="Email">
+            <button class="navigation-pane__btn">
+              <span class="navigation-pane__label">Email</span>
+            </button>
+          </li>
+          <li class="navigation-pane__item" data-tooltip="Phone Number">
+            <button class="navigation-pane__btn">
+              <span class="navigation-pane__label">Phone Number</span>
+            </button>
+          </li>
+          <li class="navigation-pane__item" data-tooltip="Address">
+            <button class="navigation-pane__btn">
+              <span class="navigation-pane__label">Address</span>
+            </button>
+          </li>
+          <li class="navigation-pane__item" data-tooltip="Senior High School Name">
+            <button class="navigation-pane__btn">
+              <span class="navigation-pane__label">Senior High School Name</span>
+            </button>
+          </li>
+          <li class="navigation-pane__item" data-tooltip="Degree Program">
+            <button class="navigation-pane__btn">
+              <span class="navigation-pane__label">Degree Program</span>
+            </button>
+          </li>
+        </ul>
+        <!-- <button class="caorusel__btn carousel__btn--all"></button> -->
+      </div>
+      <div class="card card--start finish-page">
+        <div class="card__content">
+          <img class="finish-page__check" src="assets/check.png" alt="a big check" />
+          <h1 class="card__heading">Thank you for registering!</h1>
+          <p class="card__description">
+            Your application has been successfully submitted. We will review your information and get back to you
+            shortly. In the meantime, you can check out our website for more information about our programs and
+            services.
+          </p>
+          <a href="https://www.pup.edu.ph/" target="_blank" class="card__link">Visit PUP Website</a>
+        </div>
+      </div>
+    </div>
+    <!-- scripts -->
+    <script src="js/carousel.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://kit.fontawesome.com/ca6ab3fb40.js" crossorigin="anonymous"></script>
+  </body>
+</html>
