@@ -44,7 +44,7 @@ svg {
 body {
   display: flex;
   min-height: 100vh;
-  overflow: hidden;
+  /* overflow: hidden; */
   background-color: hsl(var(--background));
   font-family: "Roboto", sans-serif;
 }
@@ -257,13 +257,12 @@ button {
 
 @media screen and (min-width: 768px) {
   .card {
-    margin: 0 auto;
+    margin: auto;
     max-width: max(46rem, 70%);
     width: 100vw;
   }
 
   .card--start {
-    margin: auto;
     height: 22.125rem;
     max-width: clamp(46rem, 70%, 80rem);
     border-radius: 0.5rem;
@@ -507,8 +506,6 @@ button {
 }
 
 .carousel__track-container {
-  display: flex;
-  flex-direction: column;
   overflow: hidden;
   padding: 2rem 0;
   transform: scale(0);
@@ -516,8 +513,8 @@ button {
 }
 
 .carousel__track {
-  flex: 1;
   display: flex;
+  height: 100%;
   transition: transform 0.5s ease-in-out;
 }
 
