@@ -20,10 +20,14 @@ window.addEventListener("load", () => {
   setCurrentSlideText();
   setActiveIndicator();
   initializeNavButtons();
+  document.querySelector(":root").style.setProperty("--vh", window.innerHeight / 100 + "px");
 });
 
 window.addEventListener("resize", () => {
   setSlideOffset();
+  if (window.innerHeight <= 768) {
+    document.querySelector(":root").style.setProperty("--vh", window.innerHeight / 100 + "px");
+  }
 });
 
 // handle swipe left and right in carousel track
@@ -110,7 +114,7 @@ centerButton.addEventListener("click", () => {
 });
 
 backButton.addEventListener("click", () => {
-  navigationPane.style.transform = "translateY(0)";
+  navigationPane.style.transform = "translateY(100px)";
 });
 
 function initializeNavButtons() {
