@@ -49,6 +49,9 @@ dropdowns.forEach((dropdown) => {
 const dropdownContents = document.querySelectorAll(".card__dropdown-content");
 function closeAllDropdowns(excludedDropdownContent) {
   dropdownContents.forEach((dropdownContent) => {
+    dropdownContent.addEventListener("touchstart", (e) => e.stopPropagation());
+    dropdownContent.addEventListener("touchmove", (e) => e.stopPropagation());
+    dropdownContent.addEventListener("touchend", (e) => e.stopPropagation());
     if (excludedDropdownContent && dropdownContent === excludedDropdownContent) return;
     dropdownContent.classList.remove("show");
   });
