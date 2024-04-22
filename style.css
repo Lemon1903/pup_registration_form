@@ -209,13 +209,11 @@ button {
 } */
 
 /* Stylings */
-@media screen and (min-width: 768px) {
-  .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .card {
@@ -502,12 +500,14 @@ button {
 /* Form Carousel */
 .carousel {
   position: relative;
-  height: 100%;
+  flex: 1;
   display: grid;
   grid-template-rows: 1fr auto;
 }
 
 .carousel__track-container {
+  display: flex;
+  flex-direction: column;
   overflow: hidden;
   padding: 2rem 0;
   transform: scale(0);
@@ -515,7 +515,7 @@ button {
 }
 
 .carousel__track {
-  height: 100%;
+  flex: 1;
   display: flex;
   transition: transform 0.5s ease-in-out;
 }
