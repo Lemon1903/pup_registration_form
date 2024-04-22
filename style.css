@@ -221,7 +221,7 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 100%;
+  width: 100%;
   border-radius: 0.5rem;
   background-color: hsl(var(--text));
   box-shadow: 0 8px 1.25rem rgba(0, 0, 0, 0.3);
@@ -230,6 +230,7 @@ button {
 .card--start {
   z-index: 999;
   position: absolute;
+  inset: 0;
   color: hsl(var(--text));
   border-radius: 0;
   background-color: hsl(var(--card));
@@ -257,12 +258,12 @@ button {
 @media screen and (min-width: 768px) {
   .card {
     margin: 0 auto;
-    height: auto;
     max-width: max(46rem, 70%);
     width: 100vw;
   }
 
   .card--start {
+    margin: auto;
     height: 22.125rem;
     max-width: clamp(46rem, 70%, 80rem);
     border-radius: 0.5rem;
@@ -542,6 +543,7 @@ button {
 }
 
 .carousel__slide {
+  display: flex;
   min-width: 90%;
   padding-inline: 0.25rem;
   transition: transform 0.5s ease;
@@ -549,7 +551,6 @@ button {
 
 @media screen and (min-width: 768px) {
   .carousel__slide {
-    display: flex;
     align-items: center;
     min-width: 100%;
     transition: none;
